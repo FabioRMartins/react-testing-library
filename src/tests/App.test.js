@@ -17,7 +17,7 @@ describe('test component App.js', () => {
     expect(linkAbout).toBeInTheDocument();
   });
 
-  test('deveria renderizar link Favorite Pokémons', () => {
+  it('deveria renderizar link Favorite Pokémons', () => {
     renderWithRouter(<App />);
     const linkFavorite = screen.getByRole('link', { name: 'Favorite Pokémons' });
     expect(linkFavorite).toBeInTheDocument();
